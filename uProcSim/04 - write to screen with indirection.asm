@@ -1,13 +1,18 @@
 ; use indirection to write to screen
 CLO
+MOV CL,C0
 MOV AL,48
-MOV [C0],AL
+MOV [CL],AL
+INC CL
 MOV AL,45
-MOV [C1],AL
+MOV [CL],AL
+INC CL
 MOV AL,4C
-MOV [C2],AL
+MOV [CL],AL
+INC CL
 MOV AL,4C
-MOV [C3],AL
+MOV [CL],AL
+INC CL
 MOV AL,4F
-MOV [C4],AL
+MOV [CL],AL
 END
