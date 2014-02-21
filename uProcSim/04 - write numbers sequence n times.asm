@@ -1,0 +1,16 @@
+; 
+CLO
+MOV BL,00
+L1:
+MOV CL,C0
+MOV AL,30
+top:
+MOV [CL],AL
+INC CL
+INC AL
+CMP AL,3A
+jnz top
+INC BL
+CMP BL,05
+jnz L1
+END
