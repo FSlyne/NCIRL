@@ -24,6 +24,7 @@ cd /usr/local/hbase/conf
 cp hbase-site.xml.local hbase-site.xml
 
 cd /usr/local/hadoop
+bin/hdfs namenode -format
 sbin/start-dfs.sh
 sbin/start-yarn.sh
 
